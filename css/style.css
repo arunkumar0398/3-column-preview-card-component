@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+body{
+	background-color: hsl(0, 0%, 95%);
+    font-family: 'Lexend Deca', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+    color: hsl(0, 0%, 95%);
+    padding-left: 210px;
+    padding-right: 210px;
+}
+
+.container {
+	display: grid;
+	grid-template-columns: auto auto auto;
+}
+
+.one-col {
+	padding: 40px;
+	background-color: hsl(31, 77%, 52%);
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+
+}
+
+.two-col {
+	background-color: hsl(184, 100%, 22%);
+	padding: 40px;
+}
+
+.three-col {
+	padding: 40px;
+	background-color: hsl(179, 100%, 13%);
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+h2 {
+	font-family: 'Big Shoulders Display' ,cursive ;
+	text-transform: uppercase;
+	color: hsl(0, 0%, 95%);
+}
+
+p{
+	font-family: 'Lexend Deca', sans-serif;
+	color: hsla(0, 0%, 100%, 0.75);
+	line-height: 26px;
+	margin-bottom: 80px;
+	width: 200px;
+}
+
+.btn-sedan {
+	color: hsl(31, 77%, 52%);
+}
+
+.btn-suv {
+	color: hsl(184, 100%, 22%);
+}
+
+.btn-luxury {
+	color: hsl(179, 100%, 13%);
+}
+
+.more-about {
+	font-family: 'Lexend Deca', sans-serif;
+	text-decoration: none;
+	background-color:hsl(0, 0%, 95%);
+    border: .5px solid hsl(0, 0%, 95%);
+	border-radius: 20px;
+	padding: 10px 18px;
+}
+
+.more-about:hover {
+	text-decoration: none;
+	background-color: transparent;
+	color: hsl(0, 0%, 95%);
+	border: .5px solid hsl(0, 0%, 95%);
+}
+
+@media (min-width: 320px) and (max-width:  520px) {
+    body {
+    	padding: 40px 100px;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        max-width: 900px;                 
+    }
+
+    .one-col {
+    	border-radius: unset;
+    	border-top-left-radius: 10px;
+    	border-top-right-radius: 10px;
+    }
+
+    .three-col {
+    	border-radius: unset;
+    	border-bottom-left-radius: 10px;
+    	border-bottom-right-radius: 10px;
+    }
+
+}
