@@ -81,7 +81,7 @@ p{
 	border: .5px solid hsl(0, 0%, 95%);
 }
 
-@media (min-width: 320px) and (max-width:  520px) {
+@media (max-width:  850px) {
     body {
     	padding: 40px 100px;
     }
